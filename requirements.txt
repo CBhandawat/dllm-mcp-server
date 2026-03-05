@@ -1,0 +1,15 @@
+# Core MCP framework
+mcp[cli]>=1.0.0
+pydantic>=2.0.0
+
+# PyTorch — install separately with CUDA on RunPod:
+# pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+# torch>=2.6.0  # uncomment for CPU-only (no GPU — won't run models)
+
+# dLLM framework — install from source:
+# git clone https://github.com/ZHZisZZ/dllm && cd dllm && pip install -e .
+
+# HuggingFace (comes with dLLM, listed here for clarity)
+transformers>=4.40.0
+accelerate>=0.30.0
+huggingface-hub>=0.23.0
