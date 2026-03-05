@@ -10,7 +10,6 @@ Unique capabilities over normal LLMs:
 - Step-by-step token evolution tracing
 - Fast inference with KV-cache acceleration (2-4x speedup)
 
-Run on RunPod RTX 4090 for ~$0.39/hr.
 """
 
 import json
@@ -24,7 +23,7 @@ from enum import Enum
 from pydantic import BaseModel, Field, ConfigDict
 from mcp.server.fastmcp import FastMCP
 
-# ─── Logging (NEVER print() in MCP servers) ───────────────────────────────────
+# ─── Logging ───────────────────────────────────
 logging.basicConfig(level=logging.INFO, stream=sys.stderr)
 logger = logging.getLogger("dllm_mcp")
 
